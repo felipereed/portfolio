@@ -25,6 +25,22 @@
   height: 100vh;
 }
 
+.header-dropdown-menu-links {
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+  font-size: x-large;
+}
+
+.header-dropdown-menu > p {
+  font-size: x-large;
+  color: rgb(148, 144, 144);
+  margin: 10px auto;
+}
+
+hr {
+  max-width: 80% ;
+}
+
 .header-hide-dropdown {
   display: none;
 }

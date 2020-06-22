@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
-  const [dropdownMenu, updateDropdownMenu] = useState('header-hide-dropdown');
+  const [dropdownMenu, updateDropdownMenu] = useState("header-hide-dropdown");
   useEffect(() => {}, []);
   const toggleHamburger = (e) => {
     document.querySelector(".hamburger").classList.toggle("is-active");
-    toggleDropdown()
+    toggleDropdown();
   };
 
   const toggleDropdown = () => {
-    if (dropdownMenu == '') {
-      updateDropdownMenu('header-hide-dropdown')
+    if (dropdownMenu == "") {
+      updateDropdownMenu("header-hide-dropdown");
     } else {
-      updateDropdownMenu('')
+      updateDropdownMenu("");
     }
-  }
+  };
   return (
     <div>
       <div className="header-container">
@@ -33,20 +33,30 @@ export default function Header() {
           </span>
         </button>
         <div className={`header-dropdown-menu ${dropdownMenu}`}>
-        <Link>About Me</Link>
-        <hr />
-        <p>Projects</p>
-        <hr />
-        <Link to="/1/details">Artlist</Link>
-        <hr />
-        <Link to="/2/details">Shipt</Link>
-        <hr />
-        <Link to="/3/details">Mood 4</Link>
-        <hr />
-        <Link to="/4/details">Plan My Trip</Link>
+          <Link className="header-dropdown-menu-links" to="/about-me">About Me</Link>
+          <hr />
+          <p>
+            <em>Projects</em>
+          </p>
+          <hr />
+          <Link className="header-dropdown-menu-links" to="/1/details">
+            Artlist
+          </Link>
+          <hr />
+          <Link className="header-dropdown-menu-links" to="/2/details">
+            Shipt
+          </Link>
+          <hr />
+          <Link className="header-dropdown-menu-links" to="/3/details">
+            Mood 4
+          </Link>
+          <hr />
+          <Link className="header-dropdown-menu-links" to="/4/details">
+            Plan My Trip
+          </Link>
+        </div>
       </div>
-      </div>
-      
+
       <h5 className="header-occupation">
         Software Engineer | Full stack web developer
       </h5>
