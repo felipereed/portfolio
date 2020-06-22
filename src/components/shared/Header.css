@@ -1,4 +1,14 @@
 .header-link {
   text-decoration: none;
   color: black;
+  margin: 0 0 0 100px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-occupation {
+  margin: 0 0 40px 0;
 }
