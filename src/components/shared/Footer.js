@@ -34,13 +34,13 @@ export default function Footer() {
           ></img>
         </a>
       </div>
-      <p>&copy; Felipe Lins. 2020.</p>
-      <p>
+      <p className="footer-text">&copy; Felipe Lins. 2020.</p>
+      <p className="footer-text">
         Created with ReactJS.
         <br />
         Deployed and hosted with AWS.
       </p>
-      <p>Thanks for visiting!</p>
+      <p className="footer-text">Thanks for visiting!</p>
     </div>
   );
 }

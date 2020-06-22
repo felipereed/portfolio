@@ -1,15 +1,16 @@
 .project-details-title {
-  
+  color: rgb(85, 85, 85)
 }
 
 .project-details-title-link {
-  color: black;
+  color: rgb(85, 85, 85)
 }
 
 .project-details-info {
   text-align: left;
   width: 80%;
   margin: 0 auto;
+  color: rgb(85, 85, 85)
 }
 
 .project-details-tech-images-container {
