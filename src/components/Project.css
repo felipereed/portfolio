@@ -1,0 +1,8 @@
+.project-image-container {
+  margin: 0 auto 30px auto;
+}
+
+.project-image {
+  width: 90%;
+  box-shadow: 0 5px 8px #888888;
+}
