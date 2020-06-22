@@ -20,7 +20,7 @@
     "alt": "shipt",
     "name": "Shipt",
     "type": "MERN full stack app",
-    "description" : "For this project, I had the pleasure of working with some very talented UX/UI Designers to redesign an already existing website. The web application has full CRUD and authentication with both functional and visually appealing components. This app utilizes the open-source end-to-end MongoDB, Express, React, and Node JavaScript stack.",
+    "description" : "For this project, I had the pleasure of working with some talented UX/UI designers to recreate an already existing website. The web application has full CRUD and authentication with both functional and visually appealing components. This app utilizes the open-source end-to-end MongoDB, Express, React, and Node JavaScript stack.",
     "technologies" : [
       "/images/html.png",
       "/images/css.png",
