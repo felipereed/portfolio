@@ -14,3 +14,22 @@
 .header-occupation {
   margin: 0 0 40px 0;
 }
+
+.header-dropdown-menu {
+  background-color: #C4C4C4;
+  box-shadow: 5px 10px 18px #888888;
+  padding: 10px 5px;
+  position: absolute;
+  right: 10px;
+  top: 110%;
+  z-index: 1;
+}
+
+@media screen 
+  and (min-device-width: 770px) 
+  and (max-device-width: 2000px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .hamburger-box {
+      display: none;
+    }
+}

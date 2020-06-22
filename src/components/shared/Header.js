@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
+  const [dropdownMenu, updateDropdownMenu] = useState([]);
+  useEffect(() => {}, []);
   const toggleHamburger = (e) => {
     document.querySelector(".hamburger").classList.toggle("is-active");
+    updateDropdownMenu();
   };
   return (
     <div>
@@ -21,12 +24,22 @@ export default function Header() {
             <span className="hamburger-inner"></span>
           </span>
         </button>
+        <div
+          className={`header-dropdown-menu ${dropdownMenu}`}
+          onClick={updateDropdownMenu}
+        ></div>
       </div>
-      <h5 className="header-occupation">Software Engineer | Full stack web developer</h5> 
+      <div>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+        <Link></Link>
+      </div>
+      <h5 className="header-occupation">
+        Software Engineer | Full stack web developer
+      </h5>
     </div>
   );
 }
-
-
- 
-

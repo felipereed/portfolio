@@ -23,3 +23,14 @@
 .project-details-tech-images {
   max-height: 50px;
 }
+
+@media screen 
+  and (min-device-width: 770px) 
+  and (max-device-width: 1800px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .project-detail-desktop-media-query-container {
+      display: flex;
+      width: 90%;
+      margin: 0 auto;
+    }
+}

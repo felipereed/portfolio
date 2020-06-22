@@ -2,7 +2,7 @@
   margin: 0 auto 30px auto;
   display: flex;
   justify-content: space-evenly;
-  width: 70%;
+  max-width: 30%;
 }
 
 .footer-images {
