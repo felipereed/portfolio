@@ -1,0 +1,10 @@
+.footer-links-container {
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.footer-images {
+  max-height: 50px;
+}
