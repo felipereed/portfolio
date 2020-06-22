@@ -3,12 +3,20 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
-  const [dropdownMenu, updateDropdownMenu] = useState([]);
+  const [dropdownMenu, updateDropdownMenu] = useState('header-hide-dropdown');
   useEffect(() => {}, []);
   const toggleHamburger = (e) => {
     document.querySelector(".hamburger").classList.toggle("is-active");
-    updateDropdownMenu();
+    toggleDropdown()
   };
+
+  const toggleDropdown = () => {
+    if (dropdownMenu == '') {
+      updateDropdownMenu('header-hide-dropdown')
+    } else {
+      updateDropdownMenu('')
+    }
+  }
   return (
     <div>
       <div className="header-container">
@@ -24,19 +32,21 @@ export default function Header() {
             <span className="hamburger-inner"></span>
           </span>
         </button>
-        <div
-          className={`header-dropdown-menu ${dropdownMenu}`}
-          onClick={updateDropdownMenu}
-        ></div>
+        <div className={`header-dropdown-menu ${dropdownMenu}`}>
+        <Link>About Me</Link>
+        <hr />
+        <p>Projects</p>
+        <hr />
+        <Link to="/1/details">Artlist</Link>
+        <hr />
+        <Link to="/2/details">Shipt</Link>
+        <hr />
+        <Link to="/3/details">Mood 4</Link>
+        <hr />
+        <Link to="/4/details">Plan My Trip</Link>
       </div>
-      <div>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
-        <Link></Link>
       </div>
+      
       <h5 className="header-occupation">
         Software Engineer | Full stack web developer
       </h5>
