@@ -9,11 +9,11 @@ export default function ProjectDetails(props) {
   return (
     <div>
       <Layout>
-        <a href="http://artlist.surge.sh/welcome" target="_blank">
+        <a href={project.href} target="_blank">
           <Project src={project.src} alt={project.alt} />
         </a>
         <div className="project-details-title">
-          <a className="project-details-title-link" href="http://artlist.surge.sh/welcome" target="_blank">
+          <a className="project-details-title-link" href={project.href} target="_blank">
             <h1>{project.name}</h1>
           </a>
         </div>

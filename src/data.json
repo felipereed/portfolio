@@ -4,6 +4,7 @@
     "src": "/images/artlist.png",
     "alt": "artlist",
     "name": "Artlist",
+    "href": "http://artlist.surge.sh/welcome",
     "type": "React on Rails full stack app using a RESTful JSON API.",
     "description": "ARTlist Marketplace is an online platform that allows striving independent artists to showcase and sell their original pieces in their own terms.",
     "technologies": [
@@ -19,6 +20,7 @@
     "src": "/images/shipt.png",
     "alt": "shipt",
     "name": "Shipt",
+    "href": "http://shiptdev.surge.sh/",
     "type": "MERN full stack app",
     "description" : "For this project, I had the pleasure of working with some talented UX/UI designers to recreate an already existing website. The web application has full CRUD and authentication with both functional and visually appealing components. This app utilizes the open-source end-to-end MongoDB, Express, React, and Node JavaScript stack.",
     "technologies" : [
@@ -35,6 +37,7 @@
     "src": "/images/mood4.png",
     "alt": "mood 4",
     "name": "Mood 4",
+    "href": "https://focused-pare-4cc9da.netlify.app/home",
     "type": "React front-end app",
     "description": "What are you in the mood for? MOOD4 helps you find it. This application gives you some options based on the location you pick and the type of business or activity you’re in the mood for. Built using helper libraries such as Axios, React Bootstrap, and React Router, this application also utilizes two external APIs, Yelp Fusion and Google Maps.",
     "technologies": [
@@ -51,6 +54,7 @@
     "src": "/images/planmytrip.png",
     "alt": "plan my trip",
     "name": "Plan My Trip",
+    "href": "http://planmytrip.surge.sh",
     "type": "Vanilla JavaScript and HTML website",
     "description": "Visiting a city like NYC can be overwhelming. So much to do, so many options! Plan My Trip is a website that randomly generates recommendations of the top rated attractions such as museums, art galleries, restaurants and more. This application utilizes the Yelp Fusion API.",
     "technologies":[
