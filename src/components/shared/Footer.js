@@ -34,7 +34,7 @@ export default function Footer() {
           ></img>
         </a>
       </div>
-      <p>&copy;Felipe Lins. 2020.</p>
+      <p>&copy; Felipe Lins. 2020.</p>
       <p>
         Created with ReactJS.
         <br />
