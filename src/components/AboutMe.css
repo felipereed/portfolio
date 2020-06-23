@@ -4,3 +4,13 @@
   font-size: 23px;
   color: rgb(85, 85, 85)
 }
+
+@media screen 
+  and (min-device-width: 770px) 
+  and (max-device-width: 2000px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .about-me-text {
+      font-size:35px;
+      max-width: 60%;
+    }
+}

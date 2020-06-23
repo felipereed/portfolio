@@ -1,7 +1,7 @@
 .header-link {
   text-decoration: none;
   color: rgb(85, 85, 85);
-  margin: 0 0 0 100px;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -13,11 +13,11 @@
 
 .header-occupation {
   margin: 0 0 40px 0;
+  color: rgb(85, 85, 85);
 }
 
 .header-dropdown-menu {
   background-color: white;
-  padding: 10px 5px;
   position: absolute;
   top: 100%;
   z-index: 1;
@@ -45,6 +45,11 @@ hr {
   display: none;
 }
 
+.hamburger { 
+  position: fixed;
+  right: 0;
+}
+
 @media screen 
   and (min-device-width: 770px) 
   and (max-device-width: 2000px) 
@@ -54,5 +59,21 @@ hr {
     }
     .header-dropdown-menu {
       display: none;
+    }
+
+    .header-occupation {
+      font-size: 30px;
+    }
+
+    .header-link {
+      font-size: 35px;
+    }
+}
+
+@media screen 
+  and (min-device-width: 415px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .header-occupation {
+      font-size: 30px;
     }
 }

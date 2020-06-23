@@ -12,11 +12,15 @@ export default function Header() {
 
   const toggleDropdown = () => {
     if (dropdownMenu == "") {
-      updateDropdownMenu("header-hide-dropdown");
+      closeDropdown();
     } else {
       updateDropdownMenu("");
     }
   };
+
+  const closeDropdown = () => {
+    updateDropdownMenu("header-hide-dropdown");
+  }
   return (
     <div>
       <div className="header-container">
@@ -39,19 +43,19 @@ export default function Header() {
             <em>Projects</em>
           </p>
           <hr />
-          <Link className="header-dropdown-menu-links" to="/1/details">
+          <Link className="header-dropdown-menu-links" to="/1/details" onClick={closeDropdown}>
             Artlist
           </Link>
           <hr />
-          <Link className="header-dropdown-menu-links" to="/2/details">
+          <Link className="header-dropdown-menu-links" to="/2/details" onClick={closeDropdown}>
             Shipt
           </Link>
           <hr />
-          <Link className="header-dropdown-menu-links" to="/3/details">
+          <Link className="header-dropdown-menu-links" to="/3/details" onClick={closeDropdown}>
             Mood 4
           </Link>
           <hr />
-          <Link className="header-dropdown-menu-links" to="/4/details">
+          <Link className="header-dropdown-menu-links" to="/4/details" onClick={closeDropdown}>
             Plan My Trip
           </Link>
         </div>
