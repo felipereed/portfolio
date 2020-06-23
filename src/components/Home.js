@@ -44,7 +44,7 @@ export default function Home() {
               to={`/${item.key}/details`}
               key={item.key}
             >
-              <Project src={item.src} alt={item.alt} />
+              <Project name={item.name} src={item.src} alt={item.alt} />
             </Link>
           ))}
         </div>

@@ -6,6 +6,12 @@
   display: none;
 }
 
+.home-desktop-links > p {
+  font-size: x-large;
+  color: rgb(148, 144, 144);
+  margin: 10px auto;
+}
+
  @media screen 
   and (min-device-width: 770px) 
   and (max-device-width: 2000px) 

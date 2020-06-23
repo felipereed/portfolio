@@ -1,8 +1,39 @@
 .project-image-container {
   margin: 0 auto 30px auto;
+  position: relative;
+}
+
+.project-image-container:hover .project-image-overlay {
+  opacity: 1;
 }
 
 .project-image {
   width: 90%;
   box-shadow: 0 5px 8px #888888;
+}
+
+.project-image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(85, 85, 85);
+  margin: 0 auto;
+}
+
+.project-image-overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
