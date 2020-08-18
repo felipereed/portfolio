@@ -25,7 +25,7 @@ export default function Header() {
     <div>
       <div className="header-container">
         <Link className="header-link" to="/home">
-          <h1>Felipe Lins</h1>
+          <h1>Felipe Reed</h1>
         </Link>
         <button
           className="hamburger hamburger--spring"
