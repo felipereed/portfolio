@@ -34,7 +34,7 @@ export default function ExternalLinks() {
           ></img>
         </a>
       </div>
-      <p className="footer-text">&copy; Felipe Lins. 2020.</p>
+      <p className="footer-text">&copy; Felipe Reed. 2020.</p>
       <p className="footer-text">
         Created with ReactJS.
         <br />
